@@ -133,3 +133,66 @@ fn nerd_separator_replaces_colon() {
     assert!(!stdout.contains("OS: "), "got {stdout}");
     assert!(stdout.contains('\u{f420}'), "got {stdout:?}");
 }
+
+#[test]
+fn logo_list_lists_every_logo() {
+    let (stdout, _, ok) = run(&["--logo-list"]);
+    assert!(ok);
+    let lines: Vec<&str> = stdout.lines().collect();
+    assert!(lines.len() > 500, "got {} logos", lines.len());
+    assert!(
+        lines.iter().any(|l| l.starts_with("fedora")),
+        "fedora missing"
+    );
+}
+
+#[test]
+fn logo_list_has_no_duplicates() {
+    let (stdout, _, _) = run(&["--logo-list"]);
+    let mut names: Vec<&str> = stdout
+        .lines()
+        .map(|l| l.split('\t').next().unwrap())
+        .collect();
+    let total = names.len();
+    names.sort_unstable();
+    names.dedup();
+    assert_eq!(names.len(), total, "duplicate primary names in --logo-list");
+}
+
+#[test]
+fn every_listed_logo_resolves() {
+    let (stdout, _, _) = run(&["--logo-list"]);
+    for line in stdout.lines() {
+        let name = line.split('\t').next().unwrap();
+        let (out, _, ok) = run(&["--no-color", "--logo", name, "--modules", "os"]);
+        assert!(ok, "--logo {name} failed");
+        assert!(out.contains("OS"), "--logo {name} produced no output");
+    }
+}
+
+#[test]
+fn aliases_resolve_to_their_logo() {
+    let (stdout, _, _) = run(&["--logo-list"]);
+    // A logo advertising aliases must accept at least one of them.
+    let with_alias = stdout
+        .lines()
+        .find(|l| l.contains('\t'))
+        .expect("some logo should declare aliases");
+    let alias = with_alias
+        .split('\t')
+        .nth(1)
+        .unwrap()
+        .split(' ')
+        .next()
+        .unwrap();
+    let (out, _, ok) = run(&["--no-color", "--logo", alias, "--modules", "os"]);
+    assert!(ok, "alias {alias} failed");
+    assert!(out.contains("OS"));
+}
+
+#[test]
+fn unknown_logo_falls_back_instead_of_failing() {
+    let (out, _, ok) = run(&["--no-color", "--logo", "no-such-logo", "--modules", "os"]);
+    assert!(ok);
+    assert!(out.contains("OS"), "got {out}");
+}

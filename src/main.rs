@@ -28,10 +28,19 @@ fn json_escape(s: &str) -> String {
 fn main() {
     let cli = Cli::parse();
 
-    let style = Style {
-        colors: cli.colors_enabled(),
-        ..Style::default()
-    };
+    if cli.logo_list {
+        for l in logo::LOGOS {
+            let aliases: Vec<&str> = l.names.iter().skip(1).copied().collect();
+            if aliases.is_empty() {
+                println!("{}", l.names[0]);
+            } else {
+                println!("{}\t{}", l.names[0], aliases.join(" "));
+            }
+        }
+        return;
+    }
+
+    let colors = cli.colors_enabled();
 
     let modules = cli.selected_modules();
     let ctx = Context::collect(&modules);
@@ -62,21 +71,29 @@ fn main() {
         return;
     }
 
-    let logo = if cli.logo_off {
-        None
-    } else {
-        let id = cli.logo.as_deref().or_else(|| ctx.os_id());
-        match id {
-            Some("off") => None,
-            Some(id) => Some(logo::detect(Some(id))),
-            None => Some(logo::detect(None)),
-        }
+    // Resolve the artwork first: its palette colours the key column, the way
+    // fastfetch defaults `.colorKeys` to the logo's first colour.
+    let raw = match (cli.logo_off, cli.logo.as_deref().or_else(|| ctx.os_id())) {
+        (true, _) | (_, Some("off")) => None,
+        (_, Some(id)) => Some(logo::find(id).unwrap_or_else(logo::unknown)),
+        (false, None) => Some(logo::detect(None)),
     };
+
+    let style = Style {
+        colors,
+        key: raw
+            .and_then(|l| l.colors.first().copied())
+            .map(|(r, g, b)| owo_colors::Rgb(r, g, b))
+            .unwrap_or(Style::default().key),
+        ..Style::default()
+    };
+
+    let logo = raw.map(|l| logo::build(l, &style));
 
     print!(
         "{}",
         cli.layout()
-            .render(logo, &entries, &style, cli.term_width())
+            .render(logo.as_ref(), &entries, &style, cli.term_width())
     );
 }
 

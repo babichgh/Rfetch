@@ -1,0 +1,2 @@
+# Logo art is vendored verbatim from fastfetch; never let an editor rewrite it.
+logos/**/*.txt -text -diff

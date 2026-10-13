@@ -43,6 +43,10 @@ pub struct Cli {
     /// JSON output, one object per field
     #[arg(long)]
     pub json: bool,
+
+    /// List every available logo name and exit
+    #[arg(long)]
+    pub logo_list: bool,
 }
 
 impl Cli {
@@ -174,6 +178,7 @@ mod tests {
     fn plain_and_json_are_flagged() {
         assert!(parse(&["--pipe"]).pipe);
         assert!(parse(&["--json"]).json);
+        assert!(parse(&["--logo-list"]).logo_list);
         // `--logo off` is distinct from the `--logo-off` flag.
         assert!(!parse(&["--logo", "off"]).logo_off);
         assert!(parse(&["--logo-off"]).logo_off);

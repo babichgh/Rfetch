@@ -73,9 +73,10 @@ impl Layout {
                 .map(|w| logo_width + self.gap + text_width <= w)
                 .unwrap_or(true);
 
-        let logo_lines: Vec<String> = match (show_logo, logo) {
-            (true, Some(l)) => l.paint(style),
-            _ => Vec::new(),
+        // `$N` markers were already resolved by `Logo::new`; reuse as is.
+        let logo_lines: &[String] = match (show_logo, logo) {
+            (true, Some(l)) => l.lines(),
+            _ => &[],
         };
         let logo_width = if show_logo { logo_width } else { 0 };
 
@@ -121,17 +122,9 @@ impl Layout {
 mod tests {
     use super::*;
     use crate::logo::Logo;
-    use owo_colors::Rgb;
 
-    fn logo(lines: &'static [&'static str]) -> Logo {
-        Logo {
-            id: "test",
-            lines,
-            gradient: color::Gradient {
-                start: Rgb(0, 0, 0),
-                end: Rgb(1, 1, 1),
-            },
-        }
+    fn logo(lines: &[&str]) -> Logo {
+        Logo::new(&lines.join("\n"), &[(1, 2, 3)], false)
     }
 
     fn entry(key: &str, value: &str) -> Entry {
