@@ -82,9 +82,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install packaging tools
-        run: apt-get update && apt-get install -y --no-install-recommends dpkg-dev
-
+      # dpkg-deb ships in the image; nothing to install.
       - name: Build
         run: bash packaging/build-deb.sh "${{ needs.version.outputs.version }}" dist
 

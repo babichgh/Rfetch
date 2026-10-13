@@ -74,13 +74,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install packaging tools (rpm)
+      # dpkg-deb is already present in rust:1-bookworm, so only rpm needs its
+      # tools installed. The redundant apt-get step was the only difference
+      # between this job and the release job that builds the same deb.
+      - name: Install packaging tools
         if: matrix.name == 'rpm'
         run: dnf install -y cargo rust rpm-build
-
-      - name: Install packaging tools (deb)
-        if: matrix.name == 'deb'
-        run: apt-get update && apt-get install -y --no-install-recommends dpkg-dev
 
       - name: Build rpm
         if: matrix.name == 'rpm'
@@ -113,8 +112,10 @@ jobs:
           ls -l dist/
 
       - name: Inspect
+        if: always()
         run: |
           set -euo pipefail
+          ls -l dist/ || true
           if ls dist/*.rpm >/dev/null 2>&1; then
             rpm -qip dist/*.rpm | head -12
             rpm -qlp dist/*.rpm
