@@ -1,0 +1,23 @@
+[package]
+name = "rfetch"
+version = "0.1.0"
+edition = "2024"
+description = "A fastfetch clone written in Rust"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/example/rfetch"
+keywords = ["fastfetch", "neofetch", "system", "info", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+owo-colors = "4.4.0"
+sysinfo = "0.39.6"
+terminal_size = "0.4.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
