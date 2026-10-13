@@ -14,7 +14,22 @@ ARCH="${ARCH:-amd64}"
 MAINTAINER="${MAINTAINER:-babichgh <john@babich.pw>}"
 
 STAGE="$(mktemp -d)"
-trap 'rm -rf "$STAGE"' EXIT
+
+# On failure leave the staged tree behind and say where it is: a CI job that
+# just says "exit 1" tells you nothing.
+cleanup() {
+  local status=$?
+  if [[ $status -ne 0 ]]; then
+    echo "==> build-deb.sh failed (exit $status); staged tree kept at $STAGE" >&2
+    echo "--- staged contents ---" >&2
+    find "$STAGE" -maxdepth 4 >&2 || true
+    [[ -f "$STAGE/DEBIAN/control" ]] && { echo "--- DEBIAN/control ---" >&2; cat "$STAGE/DEBIAN/control" >&2; }
+  else
+    rm -rf "$STAGE"
+  fi
+  return $status
+}
+trap cleanup EXIT
 
 echo "==> building release binary"
 # --locked pins dependencies to Cargo.lock. --offline is deliberately not
