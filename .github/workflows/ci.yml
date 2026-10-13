@@ -27,29 +27,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Reproduce with diagnostics
+      - name: Environment
+        if: always()
         run: |
-          set +e
-          exec > >(tee /tmp/diag.txt) 2>&1
-          echo "== pwd/ls ==";   pwd; ls -la
-          echo "== tools ==";    command -v cargo dpkg-deb bash
-          cargo --version; dpkg-deb --version
-          echo "== script ==";   cat packaging/build-deb.sh
-          echo "== run =="
-          bash packaging/build-deb.sh 0.1.0 dist
-          echo "== script exit=$? =="
-          ls -la dist/ 2>&1
-          echo "== staged trees =="; ls -la /tmp/tmp.* 2>&1 | head -40
-          exec 1>&2
-          set -e
-          cp /tmp/diag.txt diag.txt
+          { echo "== pwd =="; pwd
+            echo "== ls =="; ls -la
+            echo "== tools =="; command -v cargo dpkg-deb bash git
+            echo "== cargo =="; cargo --version
+            echo "== dpkg-deb =="; dpkg-deb --version
+            echo "== free =="; df -h / /tmp
+          } > diag.txt 2>&1 || true
+
+      - name: Build
+        if: always()
+        run: |
+          bash packaging/build-deb.sh 0.1.0 dist >> diag.txt 2>&1
+          echo "BUILD_EXIT=$?" >> diag.txt
+          ls -la dist/ >> diag.txt 2>&1
+
+      - name: Push diag
+        if: always()
+        run: |
+          cat diag.txt
           git config user.email "ci@example.invalid"
           git config user.name  "ci-debug"
           git checkout -q -B ci-debug
-          git add diag.txt
-          git commit -q -m "ci debug output"
+          git add -f diag.txt
+          git commit -q -m "ci debug output" || true
           git push -q -f origin ci-debug
-          echo "pushed diag"
 
   check:
     name: fmt, clippy, test
