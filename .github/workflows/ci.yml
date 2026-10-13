@@ -16,46 +16,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # TEMPORARY: the deb matrix job fails at "Build deb" and job logs need admin
-  # rights to fetch, so this job reproduces the failure and pushes its output to
-  # the ci-debug branch where it can be read.
-  deb-debug:
-    if: github.ref == 'refs/heads/dev'
-    runs-on: ubuntu-latest
-    container:
-      image: rust:1-bookworm
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Environment
-        if: always()
-        run: |
-          { echo "== pwd =="; pwd
-            echo "== ls =="; ls -la
-            echo "== tools =="; command -v cargo dpkg-deb bash git
-            echo "== cargo =="; cargo --version
-            echo "== dpkg-deb =="; dpkg-deb --version
-            echo "== free =="; df -h / /tmp
-          } > diag.txt 2>&1 || true
-
-      - name: Build
-        if: always()
-        run: |
-          bash packaging/build-deb.sh 0.1.0 dist >> diag.txt 2>&1
-          echo "BUILD_EXIT=$?" >> diag.txt
-          ls -la dist/ >> diag.txt 2>&1
-
-      - name: Push diag
-        if: always()
-        run: |
-          cat diag.txt
-          git config user.email "ci@example.invalid"
-          git config user.name  "ci-debug"
-          git checkout -q -B ci-debug
-          git add -f diag.txt
-          git commit -q -m "ci debug output" || true
-          git push -q -f origin ci-debug
-
   check:
     name: fmt, clippy, test
     runs-on: ubuntu-latest

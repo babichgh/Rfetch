@@ -1,0 +1,127 @@
+# AGENTS.md
+
+Guidance for coding agents working on this repository.
+
+## What this is
+
+`rfetch` is a fastfetch clone in Rust. It prints system information in a column
+next to an ASCII logo for the running distribution. It is a binary crate with no
+library target, so everything lives in `src/`.
+
+## Commands
+
+```sh
+cargo test                              # 108 tests: unit + integration
+cargo clippy --all-targets -- -D warnings
+cargo fmt
+cargo build --release
+
+python3 tools/generate_logos.py --check # is the generated logo table current?
+```
+
+The release profile has `panic = "abort"`, so `cargo test` uses the `test`
+profile (inherited from dev) and is unaffected.
+
+## Branch and release model
+
+- `dev` is where work happens.
+- `main` is the release branch. Pushing to it runs CI and publishes a GitHub
+  release tagged `v<version>`, where `<version>` comes from `Cargo.toml`.
+- Merging to `main` without bumping the version re-publishes the existing tag
+  with replaced assets rather than failing.
+
+To cut a release: bump `version` in `Cargo.toml` on `dev`, merge to `main`.
+
+## Architecture
+
+```
+src/
+├── main.rs      orchestration; --pipe and --json bypass the layout
+├── cli.rs       clap args
+├── fetch/       data collection, one module per fact
+├── logo/        531 vendored artworks + marker parsing
+└── render/      two-column layout, colours, ANSI-aware width
+```
+
+`fetch::Context::collect(&modules)` refreshes only what was requested. Reading
+`gpu` shells out to `nvidia-smi`; reading `cpu` sleeps 200 ms waiting for a load
+delta. A run that skips those modules is effectively instant, so do not make
+collection unconditional.
+
+Modules return `Option`. Data that is unavailable makes the line disappear
+rather than print `unknown`.
+
+## Things that will bite you
+
+**sysinfo 0.39 API.** `System::uptime()`, `System::host_name()`,
+`System::kernel_version()`, `System::name()` and `System::physical_core_count()`
+are *associated functions*, not methods. `Disks` is a separate type from
+`System`; use `Disks::new_with_refreshed_list()`, which loads both the list and
+the counters. Check the vendored source rather than guessing:
+`~/.cargo/registry/src/*/sysinfo-0.39.6/`.
+
+**`System::name()` is not the kernel name on Linux.** sysinfo resolves it from
+`os-release`, so it returns the distribution name ("Fedora Linux"). `fetch/kernel.rs`
+uses a `cfg(target_os)` literal instead.
+
+**ANSI escapes break width maths.** `render::width::visible_len` strips CSI and
+OSC sequences. Use it for any padding or column alignment; never `.len()`.
+
+**Logo colour markers are not numbers.** In the vendored art, `$` takes exactly
+one following character, per fastfetch's `ffLogoPrintChars`. `$2888` is palette
+entry 2 followed by the literal text `888`; `$$` is a literal dollar; the active
+colour carries over to the next line. The obvious "read all the digits"
+implementation breaks 37 logos. Do not "simplify" `logo::render_art`.
+
+**Do not hand-draw logos.** They were tried and read as random glyphs. All 531
+come from fastfetch under `logos/`, copied verbatim.
+
+## Regenerating the logo table
+
+`logos/*.txt` is art; `logos/meta.json` is names and palettes extracted from
+fastfetch's C headers. Both feed `src/logo/generated.rs`, which is committed.
+
+```sh
+python3 tools/generate_logos.py               # regenerate generated.rs
+python3 tools/generate_logos.py --check       # fail if stale
+python3 tools/generate_logos.py --sync PATH   # refresh meta.json from a
+                                               # fastfetch checkout
+```
+
+`--sync` is the only mode that needs a fastfetch clone; plain runs and `--check`
+work from `meta.json`, which is why CI can verify the table.
+
+The generator runs its output through `rustfmt`. Without that it fights
+`cargo fmt` and `--check` reports the file as stale immediately.
+
+Art is marked `-text -diff` in `.gitattributes`. Do not let an editor or EOL
+conversion rewrite it.
+
+## Packaging
+
+`packaging/rfetch.spec` builds the rpm; `packaging/build-deb.sh` builds the deb
+from `packaging/debian/control.in`.
+
+- `%cargo_build` is deliberately not used: it shells out to `fg` and fails in a
+  non-interactive build shell.
+- `--locked`, never `--offline`. A clean buildroot has no registry cache, so
+  `--offline` cannot work.
+- The deb is compiled inside `rust:1-bookworm`, not on the Ubuntu runner, so the
+  binary does not need a newer glibc than the machines it targets.
+- Only the binary rpm is published; Fedora auto-generates debuginfo and
+  debugsource packages that roughly double the download.
+
+## Testing
+
+`tests/cli.rs` runs the compiled binary. One test renders **all 531 logos**, so
+a change that breaks any single artwork is caught. That test is also the slow
+one; the rpm spec's `%check` runs `--bins` only to skip it.
+
+## Known issues
+
+- The `deb builds` matrix entry in `.github/workflows/ci.yml` fails at
+  "Build deb". The identical build succeeds in `release.yml`, which calls the
+  same script in the same image. Cause not yet identified: GitHub job logs need
+  repository admin rights to fetch, and a diagnostic job could not push its
+  output. Local runs of the same script in `rust:1-bookworm` succeed.
+- `main` currently has no branch protection; `dev` merges are not enforced.
