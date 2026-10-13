@@ -1,0 +1,119 @@
+name: CI
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+
+concurrency:
+  # A new push to the same branch makes the in-flight run irrelevant.
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: fmt, clippy, test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Format
+        run: cargo fmt --check
+
+      - name: Clippy
+        run: cargo clippy --all-targets -- --deny warnings
+
+      - name: Generated logo table is current
+        run: python3 tools/generate_logos.py --check
+
+      - name: Test
+        run: cargo test --locked
+
+      - name: Release build
+        run: cargo build --release --locked
+
+  package-check:
+    name: ${{ matrix.name }} builds
+    needs: check
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: rpm
+            image: fedora:44
+          - name: deb
+            image: rust:1-bookworm
+    container:
+      image: ${{ matrix.image }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install packaging tools (rpm)
+        if: matrix.name == 'rpm'
+        run: dnf install -y cargo rust rpm-build
+
+      - name: Install packaging tools (deb)
+        if: matrix.name == 'deb'
+        run: apt-get update && apt-get install -y --no-install-recommends dpkg-dev
+
+      - name: Version
+        id: v
+        run: |
+          set -euo pipefail
+          v=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+
+      - name: Build rpm
+        if: matrix.name == 'rpm'
+        env:
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          set -euo pipefail
+          mkdir -p /work/{SOURCES,SPECS,BUILD,RPMS,SRPMS,BUILDROOT}
+          tar --exclude=.git --exclude=target \
+              --transform "s,^,rfetch-$V/," \
+              -czf "/work/SOURCES/rfetch-$V.tar.gz" .
+          rpmbuild -ba \
+            --define "_topdir /work" \
+            --define "rfetch_version $V" \
+            --define "_sourcedir /work/SOURCES" \
+            --define "_specdir $GITHUB_WORKSPACE/packaging" \
+            packaging/rfetch.spec
+          mkdir -p dist
+          # Only the binary package; debuginfo/debugsource are Fedora-internal.
+          cp /work/RPMS/x86_64/rfetch-"$V"-*.x86_64.rpm dist/
+          ls -l dist/
+
+      - name: Build deb
+        if: matrix.name == 'deb'
+        env:
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          set -euo pipefail
+          bash packaging/build-deb.sh "$V" dist
+          ls -l dist/
+
+      - name: Inspect
+        run: |
+          set -euo pipefail
+          if ls dist/*.rpm >/dev/null 2>&1; then
+            rpm -qip dist/*.rpm | head -12
+            rpm -qlp dist/*.rpm
+          fi
+          if ls dist/*.deb >/dev/null 2>&1; then
+            dpkg-deb -I dist/*.deb
+            dpkg-deb -c dist/*.deb
+          fi

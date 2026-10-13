@@ -1,0 +1,9557 @@
+{
+  "adelie": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Adélie",
+      "Adelie"
+    ]
+  },
+  "aeon": {
+    "colors": [
+      [
+        0,
+        175,
+        135
+      ],
+      [
+        0,
+        175,
+        135
+      ]
+    ],
+    "names": [
+      "Aeon"
+    ]
+  },
+  "aeros": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "aerOS"
+    ]
+  },
+  "aerynos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "AerynOS"
+    ]
+  },
+  "aerynos_old": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "AerynOS_old"
+    ]
+  },
+  "afterglow": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Afterglow"
+    ]
+  },
+  "aix": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "aix"
+    ]
+  },
+  "almalinux": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        85,
+        255,
+        85
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Almalinux"
+    ]
+  },
+  "alpine": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Alpine"
+    ]
+  },
+  "alpine2": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Alpine2"
+    ]
+  },
+  "alpine2_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "alpine2_small"
+    ]
+  },
+  "alpine3_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "alpine3_small"
+    ]
+  },
+  "alpine_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Alpine_small"
+    ]
+  },
+  "alt_atomic": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "alt-atomic"
+    ]
+  },
+  "alter": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Alter"
+    ]
+  },
+  "altlinux": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ALTLinux"
+    ]
+  },
+  "amazon": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Amazon"
+    ]
+  },
+  "amazon_linux": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        215,
+        175,
+        0
+      ]
+    ],
+    "names": [
+      "Amazon Linux",
+      "amzn"
+    ]
+  },
+  "amiga": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Amiga"
+    ]
+  },
+  "amogos": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "AmogOS"
+    ]
+  },
+  "anarchy": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Anarchy"
+    ]
+  },
+  "android": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "android"
+    ]
+  },
+  "android_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "android_small"
+    ]
+  },
+  "anduinos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "anduinos"
+    ]
+  },
+  "antergos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Antergos"
+    ]
+  },
+  "antix": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "antiX"
+    ]
+  },
+  "anushos": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "AnushOS"
+    ]
+  },
+  "aoscos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Aosc OS",
+      "aoscos"
+    ]
+  },
+  "aoscos_old": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Aosc OS_old",
+      "aoscos_old"
+    ]
+  },
+  "aoscosretro": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Aosc OS/Retro",
+      "aoscosretro"
+    ]
+  },
+  "aoscosretro_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Aosc OS/Retro_small",
+      "aoscosretro_small"
+    ]
+  },
+  "aperture": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Aperture"
+    ]
+  },
+  "apricity": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Apricity"
+    ]
+  },
+  "arch": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arch",
+      "archmerge"
+    ]
+  },
+  "arch2": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arch2"
+    ]
+  },
+  "arch3": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arch3"
+    ]
+  },
+  "arch_old": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arch_old"
+    ]
+  },
+  "arch_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arch_small"
+    ]
+  },
+  "archbox": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "ArchBox"
+    ]
+  },
+  "archcraft": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Archcraft"
+    ]
+  },
+  "archcraft2": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Archcraft2"
+    ]
+  },
+  "archlabs": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ARCHlabs"
+    ]
+  },
+  "archstrike": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ArchStrike"
+    ]
+  },
+  "arco": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arco",
+      "arcolinux"
+    ]
+  },
+  "arco_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arco_small",
+      "arcolinux_small"
+    ]
+  },
+  "arkane": {
+    "colors": [
+      [
+        58,
+        58,
+        58
+      ],
+      [
+        175,
+        95,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Arkane",
+      "Arkane Linux"
+    ]
+  },
+  "armbian": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Armbian"
+    ]
+  },
+  "armbian2": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Armbian2"
+    ]
+  },
+  "arselinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "arse",
+      "arselinux",
+      "arse-linux"
+    ]
+  },
+  "artix": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "artix"
+    ]
+  },
+  "artix2": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "artix2"
+    ]
+  },
+  "artix2_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "artix2_small"
+    ]
+  },
+  "artix3": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "artix3"
+    ]
+  },
+  "artix_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "artix_small"
+    ]
+  },
+  "arya": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Arya"
+    ]
+  },
+  "asahi": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "fedora-asahi-remix"
+    ]
+  },
+  "asahi2": {
+    "colors": [
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        85,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "asahi2",
+      "asahi-linux2"
+    ]
+  },
+  "aster": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "aster"
+    ]
+  },
+  "asteroidos": {
+    "colors": [
+      [
+        215,
+        0,
+        0
+      ],
+      [
+        255,
+        135,
+        0
+      ],
+      [
+        255,
+        95,
+        0
+      ],
+      [
+        255,
+        175,
+        0
+      ]
+    ],
+    "names": [
+      "AsteroidOS"
+    ]
+  },
+  "astos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "astOS"
+    ]
+  },
+  "astra_linux": {
+    "colors": [
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Astra",
+      "Astra Linux",
+      "astralinux"
+    ]
+  },
+  "athenaos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "AthenaOS"
+    ]
+  },
+  "athenaos_old": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "AthenaOS_old"
+    ]
+  },
+  "aurora": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Aurora"
+    ]
+  },
+  "axos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "AxOS"
+    ]
+  },
+  "azos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Azos"
+    ]
+  },
+  "azurelinux": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "AzureLinux"
+    ]
+  },
+  "azurelinux2": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "AzureLinux2"
+    ]
+  },
+  "bedrock": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "bedrock"
+    ]
+  },
+  "bedrock_small": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "bedrock_small"
+    ]
+  },
+  "berserkarch": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "BerserkArch"
+    ]
+  },
+  "biglinux": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "BigLinux"
+    ]
+  },
+  "bitrig": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Bitrig"
+    ]
+  },
+  "blackarch": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Blackarch"
+    ]
+  },
+  "blackmesa": {
+    "colors": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "BlackMesa",
+      "black-mesa"
+    ]
+  },
+  "blackpanther": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "BlackPanther"
+    ]
+  },
+  "blag": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "BLAG"
+    ]
+  },
+  "blankon": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "BlankOn"
+    ]
+  },
+  "bluelight": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "BlueLight"
+    ]
+  },
+  "bodhi": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Bodhi"
+    ]
+  },
+  "bonsai": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Bonsai"
+    ]
+  },
+  "bredos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Bredos"
+    ]
+  },
+  "bsd": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "BSD"
+    ]
+  },
+  "bunsenlabs": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "BunsenLabs"
+    ]
+  },
+  "cachyos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "CachyOS"
+    ]
+  },
+  "cachyos_old_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "CachyOS_old_small"
+    ]
+  },
+  "cachyos_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "CachyOS_small"
+    ]
+  },
+  "calculate": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Calculate"
+    ]
+  },
+  "calinixos": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "CalinixOS"
+    ]
+  },
+  "calinixos_small": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "CalinixOS_small"
+    ]
+  },
+  "carbs": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Carbs"
+    ]
+  },
+  "cbl_mariner": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "CBL-Mariner"
+    ]
+  },
+  "celos": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "CelOS"
+    ]
+  },
+  "center": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Center"
+    ]
+  },
+  "centos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "CentOS"
+    ]
+  },
+  "centos_small": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "CentOS_small"
+    ]
+  },
+  "cereus": {
+    "colors": [
+      [
+        215,
+        135,
+        95
+      ],
+      [
+        135,
+        175,
+        135
+      ],
+      [
+        95,
+        175,
+        95
+      ],
+      [
+        175,
+        215,
+        175
+      ],
+      [
+        95,
+        175,
+        135
+      ]
+    ],
+    "names": [
+      "Cereus"
+    ]
+  },
+  "chakra": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Chakra"
+    ]
+  },
+  "chaletos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ChaletOS"
+    ]
+  },
+  "chapeau": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Chapeau"
+    ]
+  },
+  "chimera_linux": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Chimera"
+    ]
+  },
+  "chimera_linux2": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Chimera2"
+    ]
+  },
+  "chimera_linux_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Chimera_small"
+    ]
+  },
+  "chonkysealos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "ChonkySealOS"
+    ]
+  },
+  "chrom": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Chrom",
+      "ChromeOS"
+    ]
+  },
+  "cleanjaro": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Cleanjaro"
+    ]
+  },
+  "cleanjaro_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Cleanjaro_small"
+    ]
+  },
+  "clear_linux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Clear Linux",
+      "clearlinux",
+      "Clear Linux OS"
+    ]
+  },
+  "clearos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "ClearOS"
+    ]
+  },
+  "clover": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Clover"
+    ]
+  },
+  "cobalt": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Cobalt"
+    ]
+  },
+  "codex": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Codex Linux"
+    ]
+  },
+  "condres": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Condres"
+    ]
+  },
+  "cosmic": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Cosmic"
+    ]
+  },
+  "crux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "CRUX"
+    ]
+  },
+  "crux_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "CRUX_small"
+    ]
+  },
+  "crystal": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Crystal",
+      "Crystal",
+      "crystal-linux",
+      "Crystal-Linux"
+    ]
+  },
+  "cucumber": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Cucumber",
+      "CucumberOS"
+    ]
+  },
+  "cuerdos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "CuerdOS",
+      "CuerdOS GNU/Linux"
+    ]
+  },
+  "cutefishos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "CutefishOS"
+    ]
+  },
+  "cuteos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        95,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "CuteOS"
+    ]
+  },
+  "cyberos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        95,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "CyberOS"
+    ]
+  },
+  "cycledream": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "cycledream"
+    ]
+  },
+  "dahlia": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "dahliaOS"
+    ]
+  },
+  "darkos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "DarkOS"
+    ]
+  },
+  "debian": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Debian"
+    ]
+  },
+  "debian_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Debian_small"
+    ]
+  },
+  "deepin": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Deepin"
+    ]
+  },
+  "desaos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "DesaOS"
+    ]
+  },
+  "devuan": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Devuan"
+    ]
+  },
+  "devuan_small": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Devuan_small"
+    ]
+  },
+  "dietpi": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "DietPi"
+    ]
+  },
+  "dracos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "DracOS"
+    ]
+  },
+  "dragonfly": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "DragonFly"
+    ]
+  },
+  "dragonfly_old": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "DragonFly_old"
+    ]
+  },
+  "dragonfly_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "DragonFly_small"
+    ]
+  },
+  "drauger": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "DraugerOS",
+      "Drauger"
+    ]
+  },
+  "droidian": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        85,
+        255,
+        85
+      ]
+    ],
+    "names": [
+      "Droidian"
+    ]
+  },
+  "elbrus": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "elbrus"
+    ]
+  },
+  "elementary": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Elementary"
+    ]
+  },
+  "elementary_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Elementary_small"
+    ]
+  },
+  "elive": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        85,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Elive"
+    ]
+  },
+  "emmabuntus": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Emmabuntus"
+    ]
+  },
+  "encryptos": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "EncryptOS"
+    ]
+  },
+  "endeavouros": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "EndeavourOS"
+    ]
+  },
+  "endeavouros_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "EndeavourOS_small"
+    ]
+  },
+  "endless": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Endless"
+    ]
+  },
+  "enos": {
+    "colors": [
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "ENOS"
+    ]
+  },
+  "enso": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Enso"
+    ]
+  },
+  "eshanizedos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "EshanizedOS"
+    ]
+  },
+  "eurolinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "EuroLinux"
+    ]
+  },
+  "evolutionos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "EvolutionOS"
+    ]
+  },
+  "evolutionos_old": {
+    "colors": [
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "EvolutionOS_old"
+    ]
+  },
+  "evolutionos_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "EvolutionOS_small"
+    ]
+  },
+  "eweos": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "eweOS"
+    ]
+  },
+  "exherbo": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Exherbo"
+    ]
+  },
+  "exodia_predator": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Exodia"
+    ]
+  },
+  "fastfetch": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Fastfetch",
+      "FF"
+    ]
+  },
+  "fedora": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora"
+    ]
+  },
+  "fedora2_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora2_small"
+    ]
+  },
+  "fedora_coreos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Fedora-CoreOS"
+    ]
+  },
+  "fedora_kinoite": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora-Kinoite"
+    ]
+  },
+  "fedora_old": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora_old"
+    ]
+  },
+  "fedora_sericea": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora-Sericea"
+    ]
+  },
+  "fedora_silverblue": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora-Silverblue"
+    ]
+  },
+  "fedora_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Fedora_small"
+    ]
+  },
+  "femboyos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "FemboyOS"
+    ]
+  },
+  "feren": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Feren"
+    ]
+  },
+  "filotimo": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Filotimo"
+    ]
+  },
+  "finnix": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Finnix"
+    ]
+  },
+  "flatcar": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Flatcar"
+    ]
+  },
+  "floflis": {
+    "colors": [
+      [
+        85,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Floflis"
+    ]
+  },
+  "freebsd": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "HardenedBSD"
+    ]
+  },
+  "freebsd_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "freebsd_small"
+    ]
+  },
+  "freemint": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "FreeMiNT"
+    ]
+  },
+  "frugalware": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Frugalware",
+      "frugalware-linux"
+    ]
+  },
+  "funtoo": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Funtoo"
+    ]
+  },
+  "galliumos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "GalliumOS"
+    ]
+  },
+  "garuda": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Garuda"
+    ]
+  },
+  "garuda_dragon": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "GarudaDragon",
+      "garuda-dragon"
+    ]
+  },
+  "garuda_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Garuda_small",
+      "garuda-linux_small"
+    ]
+  },
+  "gentoo": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Gentoo"
+    ]
+  },
+  "gentoo_small": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Gentoo_small"
+    ]
+  },
+  "ghostbsd": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "GhostBSD"
+    ]
+  },
+  "ghostfreak": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "GhostFreak"
+    ]
+  },
+  "glaucus": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Glaucus"
+    ]
+  },
+  "gnewsense": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "gNewSense"
+    ]
+  },
+  "gnome": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "GNOME OS"
+    ]
+  },
+  "gnu": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "GNU"
+    ]
+  },
+  "gobolinux": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "GoboLinux",
+      "Gobo"
+    ]
+  },
+  "goldendoglinux": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "GoldenDogLinux"
+    ]
+  },
+  "grapheneos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "GrapheneOS"
+    ]
+  },
+  "grombyang": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Grombyang"
+    ]
+  },
+  "guix": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Guix"
+    ]
+  },
+  "guix_small": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Guix_small"
+    ]
+  },
+  "gxde": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "GXDE"
+    ]
+  },
+  "haiku": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Haiku"
+    ]
+  },
+  "haiku2": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Haiku2"
+    ]
+  },
+  "haiku_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Haiku_small"
+    ]
+  },
+  "hamonikr": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        135,
+        95,
+        255
+      ]
+    ],
+    "names": [
+      "HamoniKR"
+    ]
+  },
+  "hardclanz": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "HarDClanZ"
+    ]
+  },
+  "harmonyos": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "HarmonyOS"
+    ]
+  },
+  "hash": {
+    "colors": [
+      [
+        135,
+        255,
+        255
+      ],
+      [
+        135,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Hash"
+    ]
+  },
+  "hce": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Huawei Cloud EulerOS",
+      "hce"
+    ]
+  },
+  "heliumos": {
+    "colors": [
+      [
+        95,
+        215,
+        255
+      ]
+    ],
+    "names": [
+      "HeliumOS"
+    ]
+  },
+  "huayra": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Huayra"
+    ]
+  },
+  "hybrid": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "Hybrid"
+    ]
+  },
+  "hydroos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "HydroOS"
+    ]
+  },
+  "hyperbola": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Hyperbola"
+    ]
+  },
+  "hyperbola_small": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Hyperbola_small"
+    ]
+  },
+  "iglunix": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Iglunix",
+      "Iglu"
+    ]
+  },
+  "instantos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "InstantOS"
+    ]
+  },
+  "interix": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Interix"
+    ]
+  },
+  "irix": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "IRIX"
+    ]
+  },
+  "ironclad": {
+    "colors": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Ironclad"
+    ]
+  },
+  "itc": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Itc"
+    ]
+  },
+  "januslinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "januslinux"
+    ]
+  },
+  "kaisen": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Kaisen"
+    ]
+  },
+  "kali": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Kali"
+    ]
+  },
+  "kali_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Kali_small"
+    ]
+  },
+  "kalpa_desktop": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "kalpa-desktop"
+    ]
+  },
+  "kaos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "KaOS"
+    ]
+  },
+  "kdelinux": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "kdelinux",
+      "kde-linux"
+    ]
+  },
+  "kdeneon": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "KDE Neon"
+    ]
+  },
+  "kernelos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "KernelOS"
+    ]
+  },
+  "kibaos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "KibaOS"
+    ]
+  },
+  "kibojoe": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Kibojoe"
+    ]
+  },
+  "kiss": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "KISS"
+    ]
+  },
+  "kiss2": {
+    "colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "kiss2"
+    ]
+  },
+  "kogaion": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Kogaion"
+    ]
+  },
+  "korora": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Korora"
+    ]
+  },
+  "krassos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "KrassOS",
+      "Krass"
+    ]
+  },
+  "kslinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "KSLinux"
+    ]
+  },
+  "kubuntu": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Kubuntu",
+      "kubuntu-linux",
+      "kde-ubuntu"
+    ]
+  },
+  "kylin": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Kylin"
+    ]
+  },
+  "lainos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "LainOS"
+    ]
+  },
+  "langitketujuh": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "langitketujuh",
+      "l7"
+    ]
+  },
+  "laxeros": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Laxeros"
+    ]
+  },
+  "lede": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "LEDE"
+    ]
+  },
+  "lfs": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "LinuxFromScratch",
+      "lfs"
+    ]
+  },
+  "libreelec": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "LibreELEC"
+    ]
+  },
+  "lilidog": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Lilidog"
+    ]
+  },
+  "limeos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "LimeOS"
+    ]
+  },
+  "lingmo": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Lingmo",
+      "LingmoOS"
+    ]
+  },
+  "linspire": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Linspire",
+      "Lindows"
+    ]
+  },
+  "linux": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Linux",
+      "linux-generic"
+    ]
+  },
+  "linux_small": {
+    "colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Linux_small",
+      "linux-generic_small"
+    ]
+  },
+  "linuxlite": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "LinuxLite"
+    ]
+  },
+  "linuxlite_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "LinuxLite_small"
+    ]
+  },
+  "linuxmint": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "linuxmint"
+    ]
+  },
+  "linuxmint2": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "linuxmint2"
+    ]
+  },
+  "linuxmint2_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "linuxmint2_small"
+    ]
+  },
+  "linuxmint_old": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "linuxmint_old"
+    ]
+  },
+  "linuxmint_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "linuxmint_small"
+    ]
+  },
+  "live_raizo": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Live Raizo",
+      "Live_Raizo"
+    ]
+  },
+  "lliurex": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "LliureX"
+    ]
+  },
+  "lmde": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "LMDE"
+    ]
+  },
+  "locos": {
+    "colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "locos",
+      "loc-os",
+      "Loc-OS Linux"
+    ]
+  },
+  "lubuntu": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "lubuntu"
+    ]
+  },
+  "lunar": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Lunar"
+    ]
+  },
+  "macaronios": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Macaroni"
+    ]
+  },
+  "macos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "OSX"
+    ]
+  },
+  "macos2": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "macOS2"
+    ]
+  },
+  "macos2_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "macOS2_small"
+    ]
+  },
+  "macos3": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        85,
+        85
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "macOS3"
+    ]
+  },
+  "macos_old": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "macOS_old"
+    ]
+  },
+  "macos_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "OSX_small"
+    ]
+  },
+  "mageia": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Mageia"
+    ]
+  },
+  "mageia_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Mageia_small"
+    ]
+  },
+  "mainsailos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "MainsailOS"
+    ]
+  },
+  "mainsailos_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "MainsailOS_small"
+    ]
+  },
+  "mandriva": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "mandriva",
+      "mandrake"
+    ]
+  },
+  "manjaro": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "manjaro",
+      "manjaro-arm"
+    ]
+  },
+  "manjaro_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "manjaro_small",
+      "manjaro-arm_small"
+    ]
+  },
+  "massos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "MassOS"
+    ]
+  },
+  "matuusos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "MatuusOS",
+      "Matuus"
+    ]
+  },
+  "maui": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "MaUI"
+    ]
+  },
+  "mauna": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Mauna"
+    ]
+  },
+  "meowix": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Meowix"
+    ]
+  },
+  "mer": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Mer"
+    ]
+  },
+  "midnightbsd": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "MidnightBSD"
+    ]
+  },
+  "midos": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "MidOS"
+    ]
+  },
+  "midos_old": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "MidOS_old"
+    ]
+  },
+  "minimal": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Minimal_System"
+    ]
+  },
+  "minix": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Minix"
+    ]
+  },
+  "miracle_linux": {
+    "colors": [
+      [
+        0,
+        135,
+        95
+      ]
+    ],
+    "names": [
+      "miraclelinux"
+    ]
+  },
+  "mos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "MOS"
+    ]
+  },
+  "msys2": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Msys2"
+    ]
+  },
+  "mx": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "MX"
+    ]
+  },
+  "mx2": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "MX2"
+    ]
+  },
+  "mx_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "MX_small"
+    ]
+  },
+  "namib": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Namib"
+    ]
+  },
+  "nebios": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "NebiOS"
+    ]
+  },
+  "nekos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Nekos"
+    ]
+  },
+  "neptune": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Neptune"
+    ]
+  },
+  "netbsd": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NetBSD"
+    ]
+  },
+  "netbsd2": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NetBSD2"
+    ]
+  },
+  "netbsd_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NetBSD_small"
+    ]
+  },
+  "nethydra": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "NetHydra"
+    ]
+  },
+  "netrunner": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NetRunner"
+    ]
+  },
+  "nexalinux": {
+    "colors": [
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "nexalinux"
+    ]
+  },
+  "nitrux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Nitrux"
+    ]
+  },
+  "nixos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NixOS"
+    ]
+  },
+  "nixos_old": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "nixos_old"
+    ]
+  },
+  "nixos_old_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NixOS2"
+    ]
+  },
+  "nixos_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "NixOS_small"
+    ]
+  },
+  "nobara": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "nobara"
+    ]
+  },
+  "nomadbsd": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "nomadbsd"
+    ]
+  },
+  "nura": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Nura"
+    ]
+  },
+  "nura2": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Nura2"
+    ]
+  },
+  "nura_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Nura_small"
+    ]
+  },
+  "nuros": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "NurOS"
+    ]
+  },
+  "nurunner": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Nurunner"
+    ]
+  },
+  "nutyx": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "NuTyX"
+    ]
+  },
+  "obarun": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Obarun"
+    ]
+  },
+  "obrevenge": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "OBRevenge"
+    ]
+  },
+  "obsidianos": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "ObsidianOS"
+    ]
+  },
+  "omarchy": {
+    "colors": [
+      [
+        175,
+        215,
+        95
+      ]
+    ],
+    "names": [
+      "Omarchy"
+    ]
+  },
+  "omarchy2": {
+    "colors": [
+      [
+        175,
+        215,
+        95
+      ]
+    ],
+    "names": [
+      "Omarchy2"
+    ]
+  },
+  "omnios": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "OmniOS"
+    ]
+  },
+  "openbsd": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "openbsd"
+    ]
+  },
+  "openbsd_small": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "openbsd_small"
+    ]
+  },
+  "openeuler": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "OpenEuler"
+    ]
+  },
+  "openindiana": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "OpenIndiana"
+    ]
+  },
+  "openkylin": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "openKylin"
+    ]
+  },
+  "openmamba": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "OpenMamba"
+    ]
+  },
+  "openmandriva": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "OpenMandriva"
+    ]
+  },
+  "openruyi": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        85
+      ]
+    ],
+    "names": [
+      "openRuyi"
+    ]
+  },
+  "openstage": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "OpenStage"
+    ]
+  },
+  "opensuse": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "opensuse"
+    ]
+  },
+  "opensuse_leap": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-leap"
+    ]
+  },
+  "opensuse_leap_old": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-leap_old"
+    ]
+  },
+  "opensuse_microos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "opensuse-microos"
+    ]
+  },
+  "opensuse_slowroll": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-slowroll",
+      "opensuse-tumbleweed-slowroll"
+    ]
+  },
+  "opensuse_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "suse_small",
+      "suse-linux_small"
+    ]
+  },
+  "opensuse_tumbleweed": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-tumbleweed"
+    ]
+  },
+  "opensuse_tumbleweed2": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-tumbleweed2"
+    ]
+  },
+  "opensuse_tumbleweed_old": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-tumbleweed_old"
+    ]
+  },
+  "opensuse_tumbleweed_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "opensuse-tumbleweed_small"
+    ]
+  },
+  "openwrt": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "openwrt"
+    ]
+  },
+  "openwrt_old": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "openwrt_old"
+    ]
+  },
+  "openwrt_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "openwrt_small"
+    ]
+  },
+  "opnsense": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        95,
+        0
+      ]
+    ],
+    "names": [
+      "OPNsense"
+    ]
+  },
+  "oracle": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ol",
+      "oracle"
+    ]
+  },
+  "orchid": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "orchid"
+    ]
+  },
+  "orchid_small": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "orchid_small"
+    ]
+  },
+  "oreon": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Oreon"
+    ]
+  },
+  "origami": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Origami"
+    ]
+  },
+  "origami_small": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Origami_small"
+    ]
+  },
+  "os2warp": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ]
+    ],
+    "names": [
+      "OS2Warp"
+    ]
+  },
+  "os_elbrus": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "OS Elbrus"
+    ]
+  },
+  "osmc": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "OSMC",
+      "Open Source Media Center"
+    ]
+  },
+  "pacbsd": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PacBSD"
+    ]
+  },
+  "panwah": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Panwah"
+    ]
+  },
+  "parabola": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Parabola"
+    ]
+  },
+  "parabola2_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Parabola2_small"
+    ]
+  },
+  "parabola_small": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Parabola_small"
+    ]
+  },
+  "parch": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Parch"
+    ]
+  },
+  "pardus": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Pardus"
+    ]
+  },
+  "parrot": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Parrot"
+    ]
+  },
+  "parsix": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Parsix"
+    ]
+  },
+  "pcbsd": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PCBSD",
+      "TrueOS"
+    ]
+  },
+  "pclinuxos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PCLinuxOS"
+    ]
+  },
+  "pearos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "PearOS"
+    ]
+  },
+  "pengwin": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        85,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Pengwin"
+    ]
+  },
+  "pentoo": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Pentoo"
+    ]
+  },
+  "peppermint": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Peppermint"
+    ]
+  },
+  "peropesis": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Peropesis"
+    ]
+  },
+  "phyos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PhyOS"
+    ]
+  },
+  "pikaos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "PikaOS"
+    ]
+  },
+  "pisi": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PisiLinux"
+    ]
+  },
+  "pnm_linux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        95,
+        0
+      ]
+    ],
+    "names": [
+      "PNM Linux"
+    ]
+  },
+  "pop": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "pop",
+      "popos"
+    ]
+  },
+  "pop_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "pop_small",
+      "popos_small"
+    ]
+  },
+  "porteus": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Porteus"
+    ]
+  },
+  "prismlinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "PrismLinux"
+    ]
+  },
+  "prismlinux_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "PrismLinux_small"
+    ]
+  },
+  "proxmox": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        95,
+        0
+      ]
+    ],
+    "names": [
+      "Proxmox"
+    ]
+  },
+  "puffos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PuffOS"
+    ]
+  },
+  "puppy": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Puppy"
+    ]
+  },
+  "pureos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PureOS"
+    ]
+  },
+  "pureos_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "PureOS_small"
+    ]
+  },
+  "q4os": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Q4OS"
+    ]
+  },
+  "qts": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "qts"
+    ]
+  },
+  "quasar": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Quasar"
+    ]
+  },
+  "qubes": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Qubes"
+    ]
+  },
+  "qubes_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Qubes_small"
+    ]
+  },
+  "qubyt": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Qubyt"
+    ]
+  },
+  "quibian": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Quibian"
+    ]
+  },
+  "quirinux": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Quirinux"
+    ]
+  },
+  "radix": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Radix"
+    ]
+  },
+  "raspbian": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "raspbian"
+    ]
+  },
+  "raspbian_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "raspbian_small"
+    ]
+  },
+  "ravynos": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "RavynOS"
+    ]
+  },
+  "rebornos": {
+    "colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "RebornOS"
+    ]
+  },
+  "rebornos_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "RebornOS_small"
+    ]
+  },
+  "redcore": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "RedCore"
+    ]
+  },
+  "redos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "RedOS"
+    ]
+  },
+  "redos_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "RedOS_small"
+    ]
+  },
+  "redrose": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Redrose"
+    ]
+  },
+  "redstar": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Redstar"
+    ]
+  },
+  "refracta": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Refracta"
+    ]
+  },
+  "regata": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Regata"
+    ]
+  },
+  "regolith": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Regolith"
+    ]
+  },
+  "rengeos": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "RengeOS"
+    ]
+  },
+  "rhaymos": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "RhaymOS"
+    ]
+  },
+  "rhel": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "rhel",
+      "redhat"
+    ]
+  },
+  "rhel_old": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "rhel_old",
+      "redhat_old"
+    ]
+  },
+  "rhel_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "rhel_small",
+      "redhat_small"
+    ]
+  },
+  "rhino": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        255,
+        85,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Rhino Linux"
+    ]
+  },
+  "rocky": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "rocky"
+    ]
+  },
+  "rocky_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "rocky_small"
+    ]
+  },
+  "rosa": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "ROSA"
+    ]
+  },
+  "sabayon": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Sabayon"
+    ]
+  },
+  "sabotage": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Sabotage"
+    ]
+  },
+  "sailfish": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Sailfish"
+    ]
+  },
+  "salentos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SalentOS"
+    ]
+  },
+  "salientos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Salient OS",
+      "SalientOS"
+    ]
+  },
+  "salix": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Salix"
+    ]
+  },
+  "sambabox": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SambaBOX"
+    ]
+  },
+  "sasanqua": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Sasanqua"
+    ]
+  },
+  "scientific": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Scientific"
+    ]
+  },
+  "secureblue": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "secureblue"
+    ]
+  },
+  "semc": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "semc"
+    ]
+  },
+  "septor": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Septor"
+    ]
+  },
+  "serene": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Serene"
+    ]
+  },
+  "serpent_os": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Serpent OS"
+    ]
+  },
+  "sharklinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SharkLinux"
+    ]
+  },
+  "shastraos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ShastraOS"
+    ]
+  },
+  "shebang": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Shebang"
+    ]
+  },
+  "siduction": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Siduction"
+    ]
+  },
+  "skiffos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SkiffOS"
+    ]
+  },
+  "slackel": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Slackel"
+    ]
+  },
+  "slackware": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Slackware"
+    ]
+  },
+  "slackware_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Slackware_small"
+    ]
+  },
+  "sleeperos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SleeperOS"
+    ]
+  },
+  "sleeperos_small": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SleeperOS_small"
+    ]
+  },
+  "slitaz": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Slitaz"
+    ]
+  },
+  "smartos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SmartOS"
+    ]
+  },
+  "snigdhaos": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SnigdhaOS",
+      "Snigdha"
+    ]
+  },
+  "soda": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Soda"
+    ]
+  },
+  "solaris": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "solaris",
+      "sunos"
+    ]
+  },
+  "solaris_small": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "solaris_small",
+      "sunos_small"
+    ]
+  },
+  "solus": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Solus",
+      "solus-linux"
+    ]
+  },
+  "source_mage": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Source Mage",
+      "Source Mage GNU/Linux",
+      "source_mage",
+      "sourcemage"
+    ]
+  },
+  "sparky": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Sparky"
+    ]
+  },
+  "spoinkos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "SpoinkOS",
+      "spoink-os"
+    ]
+  },
+  "star": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Star"
+    ]
+  },
+  "steamdeck": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SteamDeckOled"
+    ]
+  },
+  "steamdeck_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SteamDeck_small"
+    ]
+  },
+  "steamos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "SteamOS"
+    ]
+  },
+  "stock_linux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Stock Linux"
+    ]
+  },
+  "sulin": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Sulin"
+    ]
+  },
+  "summitos": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "SummitOS"
+    ]
+  },
+  "suse": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "suse",
+      "suse-linux"
+    ]
+  },
+  "swagarch": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Swagarch"
+    ]
+  },
+  "t2": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "T2",
+      "T2 SDE",
+      "T2/Linux"
+    ]
+  },
+  "t2_small": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "T2_small",
+      "T2 SDE_small",
+      "T2/Linux_small"
+    ]
+  },
+  "tails": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Tails"
+    ]
+  },
+  "tatra": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Tatra"
+    ]
+  },
+  "tearch": {
+    "colors": [
+      [
+        0,
+        175,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "TeArch"
+    ]
+  },
+  "templeos": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "TempleOS"
+    ]
+  },
+  "tileos": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "TileOS"
+    ]
+  },
+  "torizoncore": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Torizon OS",
+      "TorizonCore"
+    ]
+  },
+  "trisquel": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Trisquel"
+    ]
+  },
+  "truenas_scale": {
+    "colors": [
+      [
+        0,
+        175,
+        255
+      ],
+      [
+        0,
+        135,
+        215
+      ],
+      [
+        168,
+        168,
+        168
+      ]
+    ],
+    "names": [
+      "TrueNAS-Scale"
+    ]
+  },
+  "turkish": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Turkish"
+    ]
+  },
+  "tuxedo_os": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Tuxedo OS",
+      "tuxedo"
+    ]
+  },
+  "twister": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Twister"
+    ]
+  },
+  "ublinux": {
+    "colors": [
+      [
+        0,
+        175,
+        215
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "UBLinux"
+    ]
+  },
+  "ublinux_small": {
+    "colors": [
+      [
+        0,
+        175,
+        215
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "UBLinux_small"
+    ]
+  },
+  "ubuntu": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ubuntu"
+    ]
+  },
+  "ubuntu_budgie": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ubuntu budgie",
+      "ubuntu-budgie"
+    ]
+  },
+  "ubuntu_cinnamon": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu cinnamon",
+      "ubuntu-cinnamon"
+    ]
+  },
+  "ubuntu_gnome": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu gnome",
+      "ubuntu-gnome"
+    ]
+  },
+  "ubuntu_kylin": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "ubuntu kylin",
+      "ubuntu-kylin"
+    ]
+  },
+  "ubuntu_mate": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu mate",
+      "ubuntu-mate"
+    ]
+  },
+  "ubuntu_old": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu_old"
+    ]
+  },
+  "ubuntu_old2": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "ubuntu_old2"
+    ]
+  },
+  "ubuntu_old2_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ubuntu_old2_small"
+    ]
+  },
+  "ubuntu_small": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ubuntu_small"
+    ]
+  },
+  "ubuntu_studio": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu studio",
+      "ubuntu-studio"
+    ]
+  },
+  "ubuntu_sway": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu sway",
+      "ubuntu-sway"
+    ]
+  },
+  "ubuntu_touch": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu touch",
+      "ubuntu-touch"
+    ]
+  },
+  "ubuntu_unity": {
+    "colors": [
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "ubuntu unity",
+      "ubuntu-unity"
+    ]
+  },
+  "ultramarine": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Ultramarine"
+    ]
+  },
+  "ultramarine_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Ultramarine_small"
+    ]
+  },
+  "unifi": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Unifi"
+    ]
+  },
+  "univalent": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Univalent"
+    ]
+  },
+  "univention": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Univention"
+    ]
+  },
+  "uos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "UOS"
+    ]
+  },
+  "urukos": {
+    "colors": [
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        85,
+        85,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "UrukOS"
+    ]
+  },
+  "uwuntu": {
+    "colors": [
+      [
+        255,
+        215,
+        255
+      ],
+      [
+        255,
+        95,
+        215
+      ],
+      [
+        95,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "uwuntu"
+    ]
+  },
+  "uzbek": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Uzbek"
+    ]
+  },
+  "valhalla": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Valhalla",
+      "valhallaos",
+      "valhalla-linux"
+    ]
+  },
+  "vanilla": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "vanilla"
+    ]
+  },
+  "vanilla2": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "vanilla2"
+    ]
+  },
+  "vanilla_small": {
+    "colors": [
+      [
+        255,
+        255,
+        85
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "vanilla_small"
+    ]
+  },
+  "venom": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Venom"
+    ]
+  },
+  "venom_small": {
+    "colors": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Venom_small"
+    ]
+  },
+  "vincentos": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "VincentOS"
+    ]
+  },
+  "vnux": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        127,
+        127,
+        127
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Vnux"
+    ]
+  },
+  "void": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "void"
+    ]
+  },
+  "void2": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "void2"
+    ]
+  },
+  "void2_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "void2_small"
+    ]
+  },
+  "void_small": {
+    "colors": [
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "void_small"
+    ]
+  },
+  "vzlinux": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Vzlinux"
+    ]
+  },
+  "wii_linux": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "WiiLinuxNgx",
+      "WiiLinux",
+      "Wii-Linux",
+      "Wii Linux"
+    ]
+  },
+  "windows": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "Windows",
+      "Windows 7",
+      "Windows Server 2008",
+      "Windows Server 2008 R2"
+    ]
+  },
+  "windows_11": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Windows 11",
+      "Windows Server 2022"
+    ]
+  },
+  "windows_11_small": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Windows 11_small"
+    ]
+  },
+  "windows_2025": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Windows Server 2025"
+    ]
+  },
+  "windows_8": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Windows 8",
+      "Windows 8.1",
+      "Windows 10",
+      "Windows Server 2012",
+      "Windows Server 2012 R2",
+      "Windows Server 2016",
+      "Windows Server 2019"
+    ]
+  },
+  "windows_95": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Windows 95",
+      "Windows 9x"
+    ]
+  },
+  "wolfos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "WolfOS"
+    ]
+  },
+  "xcp_ng": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    "names": [
+      "XCP-ng",
+      "xenenterprise"
+    ]
+  },
+  "xenia": {
+    "colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        128,
+        128,
+        128
+      ]
+    ],
+    "names": [
+      "Xenia"
+    ]
+  },
+  "xenia_old": {
+    "colors": [
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Xenia_old"
+    ]
+  },
+  "xeroarch": {
+    "colors": [
+      [
+        0,
+        255,
+        215
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        215
+      ],
+      [
+        135,
+        0,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "XeroArch"
+    ]
+  },
+  "xferience": {
+    "colors": [
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Xferience"
+    ]
+  },
+  "ximper": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        95,
+        0,
+        255
+      ],
+      [
+        135,
+        0,
+        215
+      ],
+      [
+        175,
+        0,
+        215
+      ]
+    ],
+    "names": [
+      "Ximper"
+    ]
+  },
+  "xinux": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ]
+    ],
+    "names": [
+      "Xinux"
+    ]
+  },
+  "xj380": {
+    "colors": [
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "XJ380"
+    ]
+  },
+  "xray_os": {
+    "colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "Xray_OS"
+    ]
+  },
+  "xubuntu": {
+    "colors": [
+      [
+        0,
+        95,
+        175
+      ],
+      [
+        204,
+        204,
+        204
+      ]
+    ],
+    "names": [
+      "Xubuntu"
+    ]
+  },
+  "yiffos": {
+    "colors": [
+      [
+        135,
+        0,
+        255
+      ],
+      [
+        135,
+        0,
+        215
+      ]
+    ],
+    "names": [
+      "YiffOS"
+    ]
+  },
+  "zorin": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Zorin"
+    ]
+  },
+  "zos": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "z/OS",
+      "zos"
+    ]
+  },
+  "zraxyl": {
+    "colors": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "names": [
+      "Zraxyl"
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+name: Release
+
+# Releases are produced from main. Development happens on dev; bump the
+# version in Cargo.toml there, merge, and this workflow publishes it.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  version:
+    name: Resolve version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: v
+        run: |
+          set -euo pipefail
+          v=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
+          test -n "$v"
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          echo "Publishing rfetch $v"
+
+  rpm:
+    name: rpm
+    needs: version
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:44
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install packaging tools
+        run: dnf install -y cargo rust rpm-build
+
+      - name: Build
+        env:
+          V: ${{ needs.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          mkdir -p /work/{SOURCES,SPECS,BUILD,RPMS,SRPMS,BUILDROOT}
+          tar --exclude=.git --exclude=target \
+              --transform "s,^,rfetch-$V/," \
+              -czf "/work/SOURCES/rfetch-$V.tar.gz" .
+          rpmbuild -ba \
+            --define "_topdir /work" \
+            --define "rfetch_version $V" \
+            --define "_sourcedir /work/SOURCES" \
+            --define "_specdir $GITHUB_WORKSPACE/packaging" \
+            packaging/rfetch.spec
+          mkdir -p dist
+          # Only the binary package; debuginfo/debugsource are Fedora-internal
+          # and roughly double the download for no benefit here.
+          cp /work/RPMS/x86_64/rfetch-"$V"-*.x86_64.rpm dist/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rfetch-rpm
+          path: dist/*.rpm
+          if-no-files-found: error
+
+  deb:
+    name: deb
+    needs: version
+    runs-on: ubuntu-latest
+    container:
+      # Built on the oldest supported base so the binary does not require a
+      # newer glibc than the machines it is meant to run on.
+      image: rust:1-bookworm
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install packaging tools
+        run: apt-get update && apt-get install -y --no-install-recommends dpkg-dev
+
+      - name: Build
+        run: bash packaging/build-deb.sh "${{ needs.version.outputs.version }}" dist
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rfetch-deb
+          path: dist/*.deb
+          if-no-files-found: error
+
+  publish:
+    name: Publish release
+    needs: [version, rpm, deb]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: Checksums
+        run: |
+          set -euo pipefail
+          cd artifacts
+          sha256sum ./*.rpm ./*.deb > checksums.txt
+          cat checksums.txt
+
+      - name: Create or update release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ needs.version.outputs.version }}
+        run: |
+          set -euo pipefail
+          notes=$(mktemp)
+          {
+            echo "A fastfetch clone written in Rust."
+            echo
+            echo '```sh'
+            echo "# Fedora / RHEL / openSUSE"
+            echo "sudo dnf install ./rfetch-${{ needs.version.outputs.version }}-*.x86_64.rpm"
+            echo
+            echo "# Debian / Ubuntu"
+            echo "sudo apt install ./rfetch_${{ needs.version.outputs.version }}_amd64.deb"
+            echo '```'
+            echo
+            echo "SHA-256:"
+            echo '```'
+            cat artifacts/checksums.txt
+            echo '```'
+          } > "$notes"
+
+          # A tag for this version may already exist when the version was not
+          # bumped; update that release rather than failing.
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" artifacts/*.rpm artifacts/*.deb \
+              artifacts/checksums.txt --clobber
+            gh release edit "$TAG" --notes-file "$notes"
+          else
+            gh release create "$TAG" \
+              artifacts/*.rpm artifacts/*.deb artifacts/checksums.txt \
+              --title "rfetch $TAG" \
+              --notes-file "$notes"
+          fi
+
+      - name: Summary
+        env:
+          TAG: v${{ needs.version.outputs.version }}
+        run: |
+          {
+            echo "### Published \`$TAG\`"
+            echo
+            echo '| Asset | Size |'
+            echo '|---|---|'
+          } >> "$GITHUB_STEP_SUMMARY"
+          for f in artifacts/*.rpm artifacts/*.deb; do
+            printf '| `%s` | %s |\n' "$(basename "$f")" \
+              "$(du -h "$f" | cut -f1)" >> "$GITHUB_STEP_SUMMARY"
+          done
+          echo
+          echo "https://github.com/${{ github.repository }}/releases/tag/$TAG" \
+            >> "$GITHUB_STEP_SUMMARY"
