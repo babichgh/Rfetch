@@ -19,6 +19,8 @@ jobs:
   check:
     name: fmt, clippy, test
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.v.outputs.version }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,6 +30,17 @@ jobs:
           components: rustfmt, clippy
 
       - uses: Swatinem/rust-cache@v2
+
+      # Resolved here rather than in each container job: a step writing to
+      # $GITHUB_OUTPUT failed under rust:1-bookworm, and the release workflow
+      # already resolves it the same way. One place, one answer.
+      - name: Resolve version
+        id: v
+        run: |
+          set -euo pipefail
+          v=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml)
+          test -n "$v"
+          echo "version=$v" >> "$GITHUB_OUTPUT"
 
       - name: Format
         run: cargo fmt --check
@@ -69,17 +82,10 @@ jobs:
         if: matrix.name == 'deb'
         run: apt-get update && apt-get install -y --no-install-recommends dpkg-dev
 
-      - name: Version
-        id: v
-        run: |
-          set -euo pipefail
-          v=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -1)
-          echo "version=$v" >> "$GITHUB_OUTPUT"
-
       - name: Build rpm
         if: matrix.name == 'rpm'
         env:
-          V: ${{ steps.v.outputs.version }}
+          V: ${{ needs.check.outputs.version }}
         run: |
           set -euo pipefail
           mkdir -p /work/{SOURCES,SPECS,BUILD,RPMS,SRPMS,BUILDROOT}
@@ -100,7 +106,7 @@ jobs:
       - name: Build deb
         if: matrix.name == 'deb'
         env:
-          V: ${{ steps.v.outputs.version }}
+          V: ${{ needs.check.outputs.version }}
         run: |
           set -euo pipefail
           bash packaging/build-deb.sh "$V" dist
