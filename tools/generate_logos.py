@@ -2,16 +2,18 @@
 """Generate `src/logo/generated.rs` from vendored fastfetch logo art.
 
 The art under `logos/` is taken verbatim from fastfetch's `src/logo/ascii/`
-(MIT, see LICENSE-fastfetch). This script only reads the metadata that lives in
-fastfetch's C headers — the per-logo display names and colour palettes — and
-emits a Rust table. It never modifies the art itself.
+(MIT, see LICENSE-fastfetch). This script never modifies the art; it only
+pairs each `.txt` with the display names and colour palette that fastfetch
+declares in its C headers, and emits a Rust table.
+
+Metadata is cached in `logos/meta.json` so that regenerating and `--check` work
+without a fastfetch checkout, which CI does not have.
 
 Usage:
-    python3 tools/generate_logos.py [--check] [--fastfetch PATH]
-
-    --check      regenerate into memory and fail if the committed file differs
-    --fastfetch  path to a fastfetch checkout, to read the .inc metadata from
-                 (defaults to /tmp/opencode/ffprobe)
+    python3 tools/generate_logos.py                 # regenerate generated.rs
+    python3 tools/generate_logos.py --check         # fail if it is stale
+    python3 tools/generate_logos.py --sync PATH     # refresh meta.json from a
+                                                      # fastfetch checkout
 
 fastfetch declares each logo as:
 
@@ -30,6 +32,7 @@ have to be kept together or the art renders wrong.
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import pathlib
 import re
@@ -39,6 +42,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LOGOS_DIR = ROOT / "logos"
+META = LOGOS_DIR / "meta.json"
 OUT = ROOT / "src" / "logo" / "generated.rs"
 
 # The 16 named foreground colours fastfetch uses, as truecolor RGB.
@@ -108,9 +112,9 @@ def parse_colors(body: str) -> list[tuple[int, int, int]]:
     return out
 
 
-def parse_fastfetch(src: pathlib.Path) -> dict[str, tuple[list[str], list]]:
-    """Map art stem -> (display names, palette) from the .inc headers."""
-    meta: dict[str, tuple[list[str], list]] = {}
+def parse_fastfetch(src: pathlib.Path) -> dict[str, dict]:
+    """Map art stem -> {names, colors} from the .inc headers."""
+    meta: dict[str, dict] = {}
     for inc in sorted(src.glob("*.inc")):
         text = inc.read_text(encoding="utf-8", errors="replace")
         for m in re.finditer(
@@ -121,7 +125,10 @@ def parse_fastfetch(src: pathlib.Path) -> dict[str, tuple[list[str], list]]:
             body = m.group(3)
             nm = re.search(r'\.names\s*=\s*\{(.*?)\}', body, re.S)
             names = re.findall(r'"([^"]+)"', nm.group(1)) if nm else []
-            meta[m.group(2).lower()] = (names, parse_colors(body))
+            meta[m.group(2).lower()] = {
+                "names": names,
+                "colors": [list(c) for c in parse_colors(body)],
+            }
     return meta
 
 
@@ -177,11 +184,34 @@ def rustfmt(source: str) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
-    ap.add_argument("--fastfetch", default="/tmp/opencode/ffprobe")
+    ap.add_argument(
+        "--sync",
+        metavar="FASTFETCH_PATH",
+        help="refresh logos/meta.json from a fastfetch checkout",
+    )
     args = ap.parse_args()
 
-    src = pathlib.Path(args.fastfetch) / "src" / "logo" / "ascii"
-    meta = parse_fastfetch(src) if src.is_dir() else {}
+    if args.sync:
+        src = pathlib.Path(args.sync) / "src" / "logo" / "ascii"
+        if not src.is_dir():
+            print(f"no logo art under {src}", file=sys.stderr)
+            return 1
+        meta = parse_fastfetch(src)
+        META.write_text(
+            json.dumps(meta, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+        print(f"wrote {META.relative_to(ROOT)}: {len(meta)} entries")
+
+    if not META.exists():
+        print(
+            f"{META.relative_to(ROOT)} is missing; run with --sync <fastfetch path>",
+            file=sys.stderr,
+        )
+        return 1
+
+    raw_meta = json.loads(META.read_text(encoding="utf-8"))
+    meta = raw_meta
 
     arts = sorted(LOGOS_DIR.glob("*/*.txt"))
     if not arts:
@@ -194,7 +224,9 @@ def main() -> int:
     entries = []
     for path in arts:
         stem = path.stem
-        names, colors = meta.get(stem, ([], []))
+        entry = meta.get(stem)
+        names = entry["names"] if entry else []
+        colors = [tuple(c) for c in entry["colors"]] if entry else []
         if not names:
             missing.append(stem)
         if not colors:
