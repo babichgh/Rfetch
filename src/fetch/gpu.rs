@@ -67,7 +67,9 @@ fn parse_lspci(stdout: &str) -> Option<String> {
         let Some((_, desc)) = line.split_once(": ") else {
             continue;
         };
-        let desc = desc.split(" [").next().unwrap_or(desc).trim();
+        // Bracketed text often contains the actual GPU model (e.g.
+        // "GA102 [GeForce RTX 3090]"); dropping it loses useful data.
+        let desc = desc.trim();
         if !desc.is_empty() {
             names.push(desc.to_string());
         }
@@ -164,7 +166,7 @@ mod tests {
         let v = parse_lspci(out).unwrap();
         assert!(v.starts_with("2x"), "got {v}");
         assert!(v.contains("Intel"));
-        assert!(!v.contains("[rev"), "trailing bracket not stripped: {v}");
+        assert!(v.contains("GeForce RTX 3090"), "model missing: {v}");
     }
 
     #[test]

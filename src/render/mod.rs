@@ -59,7 +59,7 @@ impl Layout {
 
         let text_width = key_width
             + self.key_padding
-            + self.separator.len_utf8()
+            + visible_len(&self.separator.to_string())
             + 1
             + entries
                 .iter()
@@ -209,6 +209,23 @@ mod tests {
         let art = logo(&["AB", "CD"]);
         let out = Layout::default().render(Some(&art), &[entry("OS", "Fedora")], &style, Some(120));
         assert!(out.starts_with("AB"));
+    }
+
+    #[test]
+    fn nerd_separator_counts_as_one_terminal_column() {
+        let style = Style {
+            colors: false,
+            ..Default::default()
+        };
+        let art = logo(&["AB"]);
+        let layout = Layout {
+            separator: NERD_SEPARATOR,
+            ..Default::default()
+        };
+        // 2 logo columns + 3 gap + 2 key + 1 padding + 1 separator
+        // + 1 space + 1 value = 11 terminal columns, not 13 UTF-8 bytes.
+        let out = layout.render(Some(&art), &[entry("OS", "A")], &style, Some(11));
+        assert!(out.starts_with("AB"), "logo dropped despite fitting: {out}");
     }
 
     #[test]

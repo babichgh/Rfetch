@@ -102,7 +102,7 @@ for essentially all of the runtime. Runs that do not request it finish instantly
 ## Development
 
 ```sh
-cargo test                              # 108 unit + integration tests
+cargo test                              # unit + integration tests
 cargo clippy --all-targets
 cargo fmt
 ```
