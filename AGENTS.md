@@ -49,9 +49,9 @@ src/
 ```
 
 `fetch::Context::collect(&modules)` refreshes only what was requested. Reading
-`gpu` shells out to `nvidia-smi`; reading `cpu` sleeps 200 ms waiting for a load
-delta. A run that skips those modules is effectively instant, so do not make
-collection unconditional.
+`gpu` shells out to `nvidia-smi`; `monitor` queries Hyprland or XRandR only
+when selected; reading `cpu` sleeps 200 ms waiting for a load delta. Do not
+make collection unconditional.
 
 Modules return `Option`. Data that is unavailable makes the line disappear
 rather than print `unknown`.

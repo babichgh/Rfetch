@@ -115,10 +115,16 @@ fn help_lists_every_module() {
     let (stdout, _, ok) = run(&["--help"]);
     assert!(ok);
     for m in [
-        "os", "host", "kernel", "uptime", "cpu", "gpu", "ram", "disk",
+        "os", "host", "kernel", "uptime", "cpu", "gpu", "ram", "disk", "monitor",
     ] {
         assert!(stdout.contains(m), "{m} missing from --help");
     }
+}
+
+#[test]
+fn monitor_module_is_selectable_even_on_headless_hosts() {
+    let (_, stderr, ok) = run(&["--pipe", "--modules", "monitor"]);
+    assert!(ok, "stderr: {stderr}");
 }
 
 #[test]

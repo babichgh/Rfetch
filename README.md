@@ -9,10 +9,10 @@ A fastfetch clone written in Rust.
     .:cccccccccccccccccccccccccc:.       Uptime : 5h 23m
   .;ccccccccccccc;.:dddl:.;ccccccc;.     CPU    : Intel(R) Xeon(R) CPU E5-2680 v3 (12) @ 2.97 GHz : 1%
  .:ccccccccccccc;OWMKOOXMWd;ccccccc:.    GPU    : NVIDIA Corporation TU116
-.:ccccccccccccc;KMMc;cc;xMMc;ccccccc:.   RAM    : 5.8 GiB / 15.4 GiB (37%)
-,cccccccccccccc;MMM.;cc;;WW:;cccccccc,   Disk   : /: 289.2 GiB / 444.5 GiB (65%), /boot: 961.8 MiB / 1.9 GiB (49%)
-:cccccccccccccc;MMM.;cccccccccccccccc:
-:ccccccc;oxOOOo;MMM000k.;cccccccccccc:
+.:ccccccccccccc;KMMc;cc;xMMc;ccccccc:.   Monitor  : DP-1: 1920x1080 (24.0") @ 60.00 Hz
+,cccccccccccccc;MMM.;cc;;WW:;cccccccc,   Monitor 2: HDMI-A-1: 1024x768 (14.9") @ 75.03 Hz
+:cccccccccccccc;MMM.;cccccccccccccccc:   RAM      : 5.8 GiB / 15.4 GiB (37%)
+:ccccccc;oxOOOo;MMM000k.;cccccccccccc:   Disk     : 289.2 GiB / 155.3 GiB (65%) - btrfs
 cccccc;MMKxdd:;MMMkddc.;cccccccccccc;
 ccccc;XMO';cccc;MMM.;cccccccccccccccc'
 ccccc;MMo;ccccc;MMW.;ccccccccccccccc;
@@ -54,12 +54,17 @@ rfetch --logo-list | grep nix    # find a logo by name
 
 ## Modules
 
-`os`, `host`, `kernel`, `uptime`, `cpu`, `gpu`, `ram`, `disk`
+`os`, `host`, `kernel`, `uptime`, `cpu`, `gpu`, `ram`, `disk`, `monitor`
 
 A module whose data is unavailable is silently omitted rather than printed as
 `unknown`, so the output stays clean on bare servers and inside containers.
 
 GPU detection tries `nvidia-smi` first, then `lspci`, then `/sys/class/drm`.
+Disk shows used and available GiB, percentage used and filesystem type for the
+root volume (or the largest available disk). Each active monitor appears on its
+own line between GPU and RAM with its current resolution, diagonal in inches
+(when known) and refresh rate;
+it uses Hyprland or XRandR and is omitted on headless systems.
 
 ## Logos
 
