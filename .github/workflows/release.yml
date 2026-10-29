@@ -37,6 +37,9 @@ jobs:
     name: rpm
     needs: version
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     container:
       image: fedora:44
     steps:

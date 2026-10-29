@@ -61,6 +61,11 @@ jobs:
     name: ${{ matrix.name }} builds
     needs: check
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        # Container jobs otherwise default to sh, which lacks pipefail and
+        # bash brace expansion used by the packaging steps.
+        shell: bash
     strategy:
       fail-fast: false
       matrix:

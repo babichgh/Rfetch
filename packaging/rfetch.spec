@@ -34,10 +34,8 @@ cargo build --release --locked
 %install
 install -Dm 0755 target/release/rfetch %{buildroot}%{_bindir}/rfetch
 
-# The upstream license of the bundled artwork travels with the package.
-install -Dm 0644 LICENSE-fastfetch %{buildroot}%{_license}/rfetch/LICENSE-fastfetch
-install -Dm 0644 LICENSE          %{buildroot}%{_license}/rfetch/LICENSE
-install -Dm 0644 README.md        %{buildroot}%{_docdir}/rfetch/README.md
+# %license and %doc in %files install these from the build tree; manually
+# installing them here creates duplicate, potentially unpackaged files.
 
 %check
 # Unit tests only. The integration suite renders all 531 logos, which is worth

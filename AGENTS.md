@@ -11,7 +11,7 @@ library target, so everything lives in `src/`.
 ## Commands
 
 ```sh
-cargo test                              # 108 tests: unit + integration
+cargo test                              # unit + integration tests
 cargo clippy --all-targets -- -D warnings
 cargo fmt
 cargo build --release
@@ -119,9 +119,4 @@ one; the rpm spec's `%check` runs `--bins` only to skip it.
 
 ## Known issues
 
-- The `deb builds` matrix entry in `.github/workflows/ci.yml` fails at
-  "Build deb". The identical build succeeds in `release.yml`, which calls the
-  same script in the same image. Cause not yet identified: GitHub job logs need
-  repository admin rights to fetch, and a diagnostic job could not push its
-  output. Local runs of the same script in `rust:1-bookworm` succeed.
 - `main` currently has no branch protection; `dev` merges are not enforced.
