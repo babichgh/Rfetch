@@ -52,5 +52,5 @@ cargo test --release --locked --bins
 %{_bindir}/rfetch
 
 %changelog
-* Mon Jan 01 2024 babichgh <john@babich.pw> - %{rfetch_version}-1
+* Tue Oct 13 2026 babichgh <john@babich.pw> - %{rfetch_version}-1
 - Initial packaged release
