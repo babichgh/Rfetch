@@ -24,13 +24,18 @@ profile (inherited from dev) and is unaffected.
 
 ## Branch and release model
 
-- `dev` is where work happens.
-- `main` is the release branch. Pushing to it runs CI and publishes a GitHub
-  release tagged `v<version>`, where `<version>` comes from `Cargo.toml`.
-- Merging to `main` without bumping the version re-publishes the existing tag
-  with replaced assets rather than failing.
+- All development and fixes go to `dev` until a release is ready. Do not push
+  unreleased work directly to `main`.
+- `main` is the release branch: every merge or push to it must create a **new**
+  release. Before merging, bump `version` in `Cargo.toml` on `dev` to a version
+  that has not been released yet, and update `Cargo.lock` accordingly.
+- Pushing to `main` runs CI and the release workflow, which publishes a GitHub
+  release tagged `v<version>` from `Cargo.toml`. Without a version bump the
+  workflow overwrites the existing release assets but does not move its Git tag;
+  never merge to `main` with an already-released version.
 
-To cut a release: bump `version` in `Cargo.toml` on `dev`, merge to `main`.
+To cut a release: finish and test changes on `dev`, bump the version there,
+merge `dev` into `main`, then push `main` to publish the new release.
 
 ## Architecture
 
