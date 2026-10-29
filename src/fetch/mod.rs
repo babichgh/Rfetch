@@ -1,10 +1,11 @@
-//! Data collection: one entry per requested module.
+//! Data collection: one entry per requested module (one per connected monitor).
 
 pub mod cpu;
 pub mod disk;
 pub mod gpu;
 pub mod host;
 pub mod kernel;
+pub mod monitor;
 pub mod os;
 pub mod ram;
 pub mod uptime;
@@ -23,6 +24,7 @@ pub enum Module {
     Uptime,
     Cpu,
     Gpu,
+    Monitor,
     Ram,
     Disk,
 }
@@ -35,6 +37,7 @@ pub const DEFAULT_ORDER: &[Module] = &[
     Module::Uptime,
     Module::Cpu,
     Module::Gpu,
+    Module::Monitor,
     Module::Ram,
     Module::Disk,
 ];
@@ -98,6 +101,7 @@ impl Context {
             Module::Gpu => gpu::gpu(self)?,
             Module::Ram => ram::ram(self)?,
             Module::Disk => disk::disk(self)?,
+            Module::Monitor => monitor::monitors(self).into_iter().next()?,
         };
         let value = value.trim();
         if value.is_empty() {
@@ -111,13 +115,37 @@ impl Context {
 
     /// Collects every requested module, skipping unavailable ones.
     pub fn entries(&self, modules: &[Module]) -> Vec<Entry> {
-        modules.iter().filter_map(|m| self.entry(*m)).collect()
+        modules
+            .iter()
+            .flat_map(|m| {
+                if *m == Module::Monitor {
+                    monitor_entries(monitor::monitors(self))
+                } else {
+                    self.entry(*m).into_iter().collect()
+                }
+            })
+            .collect()
     }
 
     /// `/etc/os-release` ID, used to pick the logo.
     pub fn os_id(&self) -> Option<&str> {
         self.os_release.as_ref()?.id.as_deref()
     }
+}
+
+fn monitor_entries(values: Vec<String>) -> Vec<Entry> {
+    values
+        .into_iter()
+        .enumerate()
+        .map(|(i, value)| Entry {
+            key: if i == 0 {
+                "Monitor".to_string()
+            } else {
+                format!("Monitor {}", i + 1)
+            },
+            value,
+        })
+        .collect()
 }
 
 /// Human-facing key for a module.
@@ -131,6 +159,7 @@ pub fn label(module: Module) -> &'static str {
         Module::Gpu => "GPU",
         Module::Ram => "RAM",
         Module::Disk => "Disk",
+        Module::Monitor => "Monitor",
     }
 }
 
@@ -165,6 +194,7 @@ mod tests {
             Module::Gpu,
             Module::Ram,
             Module::Disk,
+            Module::Monitor,
         ] {
             assert!(!label(m).is_empty());
         }
@@ -195,5 +225,23 @@ mod tests {
         let ctx = Context::collect(&[]);
         assert!(ctx.entries(&[]).is_empty());
         assert!(ctx.cpu_usage.is_none());
+    }
+
+    #[test]
+    fn monitors_are_separate_entries_in_order() {
+        let entries = monitor_entries(vec!["DP-1: 1920x1080".into(), "HDMI-1: 1024x768".into()]);
+        assert_eq!(entries[0].key, "Monitor");
+        assert_eq!(entries[1].key, "Monitor 2");
+        assert_eq!(entries[1].value, "HDMI-1: 1024x768");
+    }
+
+    #[test]
+    fn default_order_puts_monitors_between_gpu_and_ram() {
+        let gpu = DEFAULT_ORDER
+            .iter()
+            .position(|m| *m == Module::Gpu)
+            .unwrap();
+        assert_eq!(DEFAULT_ORDER[gpu + 1], Module::Monitor);
+        assert_eq!(DEFAULT_ORDER[gpu + 2], Module::Ram);
     }
 }
